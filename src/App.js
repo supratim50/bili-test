@@ -1,24 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+
+import Header from "./components/header";
+import YourAccount from "./components/yourAccount";
+import IncreaseSale from "./components/increase-sale";
+import CardSection from "./components/cards/cardSection";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header imageName="account-based-marketing.png" />
+      <YourAccount imageName="is-your-account.png" />
+      <IncreaseSale imageName="increase-sales.png" />
+      <CardSection />
     </div>
   );
 }
